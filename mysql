@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS datasets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    source VARCHAR(255)
+);
+
+INSERT INTO datasets (name, description, source) VALUES
+('Iris Dataset', 'A dataset for classification containing flower measurements.', 'UCI Machine Learning Repository'),
+('Titanic Dataset', 'Passenger survival information from the Titanic.', 'Kaggle'),
+('MNIST Dataset', 'Handwritten digit recognition dataset.', 'OpenML');
